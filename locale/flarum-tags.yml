@@ -46,11 +46,11 @@ flarum-tags:
 
     # These translations are used in the Tags page.
     tags:
-      about_tags_text: "Tags are used to categorize discussions. Primary tags are like traditional forum categories: they can be arranged in a two-level hierarchy. Secondary tags do not have hierarchy or order, and are useful for micro-categorization."
+      about_tags_text: "Etiketler, tartışmaları kategorilere ayırmak için kullanılır. Birincil etiketler geleneksel forum kategorileri gibidir: iki seviyeli bir hiyerarşi içinde düzenlenebilirler. İkincil etiketlerin hiyerarşisi veya düzeni yoktur ve mikro kategorizasyon için yararlıdır."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: Primary Tags
-      secondary_heading: Secondary Tags
-      settings_button: Settings
+      primary_heading: Birincil Etiketler
+      secondary_heading: İkincil Etiketler
+      settings_button: Ayarlar
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -99,6 +99,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: Create Tag
+    create_tag: Etiket Oluştur
     name: Name
-    tags: Tags
+    tags: Etiketler
