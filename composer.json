@@ -4,6 +4,12 @@
   "description": "Turkish language pack.",
   "keywords": ["locale"],
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Çağatay",
+      "email": "cagatayldzz@gmail.com"
+    }
+  ],
   "require": {
     "flarum/core": "^0.1.0-beta.8"
   },
