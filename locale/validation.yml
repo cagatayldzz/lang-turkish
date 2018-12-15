@@ -1,5 +1,5 @@
 validation:
-  accepted: "The :attribute must be accepted."
+  accepted: ":attribute kabul edilmek zorunda."
   active_url: "The :attribute is not a valid URL."
   after: "The :attribute must be a date after :date."
   after_or_equal: "The :attribute must be a date after or equal to :date."
@@ -95,12 +95,12 @@ validation:
   uuid: "The :attribute must be a valid UUID."
 
   attributes:
-    username: username
-    password: password
-    email: email
-    title: title
-    content: content
-    name_singular: singular name
-    name_plural: plural name
-    tag_count_primary: number of primary tags
-    tag_count_secondary: number of secondary tags
+    username: Kullanıcı Adı
+    password: Şifre
+    email: E-Posta
+    title: Başlık
+    content: İçerik
+    name_singular: Tekil İsim
+    name_plural: Çoğul İsim
+    tag_count_primary: birincil etiket sayısı
+    tag_count_secondary: ikincil etiket sayısı

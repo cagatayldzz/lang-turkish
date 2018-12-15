@@ -274,8 +274,8 @@ core:
       back_to_index_tooltip: Back to Discussion List
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: Profile
-      search_placeholder: Search Forum
+      profile_button: Profil
+      search_placeholder: Ara
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
@@ -294,7 +294,7 @@ core:
       newest_button: En Yeni
       oldest_button: En Eski
       relevance_button: Relevance
-      top_button: En Yeni
+      top_button: En İyi
 
     # These translations are used in the Log In modal dialog.
     log_in:
