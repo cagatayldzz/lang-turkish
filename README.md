@@ -3,3 +3,7 @@
 ## Installation
 
 composer require cagatayldzz/lang-turkish
+
+## Remove
+
+composer remove cagatayldzz/lang-turkish
