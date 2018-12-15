@@ -1,7 +1,7 @@
 {
     "name": "cagatayldzz/lang-turkish",
     "type": "flarum-extension",
-    "description": "Traditional Turkish language pack for Flarum",
+    "description": "Turkish language pack.",
     "keywords": ["locale"],
     "license": "MIT",
     "require": {
