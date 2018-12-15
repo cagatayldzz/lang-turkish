@@ -14,7 +14,7 @@ flarum-flags:
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: Community Guidelines URL
+      guidelines_url_label: Topluluk Kuralları URL
       title: İşaretleme Ayarları
 
   # Translations in this namespace are used by the forum user interface.

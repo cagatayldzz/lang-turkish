@@ -15,8 +15,8 @@ flarum-subscriptions:
     # These translations are used by the discussion control buttons.
     discussion_controls:
       follow_button: => flarum-subscriptions.ref.follow
-      unfollow_button: Unfollow
-      unignore_button: Unignore
+      unfollow_button: Takipten vazgeç
+      unignore_button: Yoksayılanlardan çıkar
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
@@ -24,7 +24,7 @@ flarum-subscriptions:
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      new_post_text: "{username} posted"
+      new_post_text: "{username} gönderildi"
 
     # These translations are used in the Settings page.
     settings:
@@ -49,6 +49,6 @@ flarum-subscriptions:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    follow: Follow
-    following: Following
-    ignoring: Ignoring
+    follow: Takip Et
+    following: Takip Edilenler
+    ignoring: Takibi Bırak
