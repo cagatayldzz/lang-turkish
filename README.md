@@ -1,8 +1,5 @@
 # Turkish Language Pack for Flarum
 
-### Version
-- v0.1.0-beta.8
-
 ### Installation
 composer require cagatayldzz/lang-turkish
 
