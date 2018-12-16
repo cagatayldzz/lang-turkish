@@ -1,10 +1,13 @@
 # Turkish Language Pack for Flarum
 
-## Installation
+### Version
+- v0.1.0-beta.8
+
+### Installation
 composer require cagatayldzz/lang-turkish
 
-## Remove
+### Remove
 composer remove cagatayldzz/lang-turkish
 
-## License
+### License
 Released under the MIT License. Please see the [license](LICENSE) file.
