@@ -9,7 +9,7 @@ flarum-mentions:
 
     # These translations are used by the composer (reply autocompletion function).
     composer:
-      mention_tooltip: Bir kullanıcı veya mesajdan bahsedin
+      mention_tooltip: Bahsed
       reply_to_post_text: "Cevapla #{number}"
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".

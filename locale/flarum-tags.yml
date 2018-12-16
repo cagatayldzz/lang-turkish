@@ -61,7 +61,7 @@ flarum-tags:
       choose_secondary_placeholder: "1 tane daha etiket seç|{count} tane daha etiket seç"
       edit_title: "Edit Tags for {title}"
       submit_button: => core.ref.okay
-      title: Choose Tags for Your Discussion
+      title: Tartışmanız için etiketleri seçin
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
