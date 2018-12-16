@@ -19,7 +19,7 @@ core:
       colored_header_label: Renkli Başlık
       colors_heading: Renkler
       colors_text: "Forum temanız için iki renk seçin. Birincisi vurgu rengi olarak ikincisi ise arkaplandaki ögeler için kullanılacak."
-      custom_footer_heading: Custom Footer
+      custom_footer_heading: Harici Footer
       custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: Harici Başlık
       custom_header_text: => core.ref.custom_header_text
@@ -29,7 +29,7 @@ core:
       edit_css_button: Harici CSS Düzenle
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
-      enter_hex_message: Please enter a hexadecimal color code.
+      enter_hex_message: Lütfen hexadecimal renk kodunu girin.
       favicon_heading: Favicon
       favicon_text: Yer imlerinde görünmesi için küçük resmi yükleyin.
       logo_heading: Logo
@@ -45,7 +45,7 @@ core:
       forum_title_heading: Forum Başlığı
       home_page_heading: Ana Sayfa
       home_page_text: Kullanıcıların forumunuzu ziyaret ettiğinde ilk görecekleri sayfayı seçin.
-      saved_message: Your changes were saved.
+      saved_message: Değişiklikleriniz kaydedildi.
       show_language_selector_label: Dil seçici göster
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Hoşgeldin Afişi
@@ -72,14 +72,14 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: Delete Group
-      delete_confirmation: "Are you sure you want to delete this group? The group members will NOT be deleted."
-      icon_label: Icon
-      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>including</em> the <code>fas fa-</code> prefix."
-      name_label: Name
-      plural_placeholder: Plural (e.g. Mods)
-      singular_placeholder: Singular (e.g. Mod)
+      delete_confirmation: "Bu grubu silmek istediğinizden emin misiniz? Grup üyeleri silinmeyecektir."
+      icon_label: İkon
+      icon_text: "Herhangi bir <a>FontAwesome</a> icon sınıfını, <code>fas fa-</code> öneki <em>olmadan</em> yazın."
+      name_label: İsim
+      plural_placeholder: Çoğul (e.g. Moderatörler)
+      singular_placeholder: Tekil (e.g. Moderatör)
       submit_button: => core.ref.save_changes
-      title: Create Group
+      title: Grup Oluştur
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
@@ -105,9 +105,9 @@ core:
 
     # These translations are used in the Extensions page.
     extensions:
-      add_button: Add Extension
+      add_button: Eklenti Ekle
       settings_button: => core.ref.settings
-      uninstall_button: Uninstall
+      uninstall_button: Kaldır
 
     # These translations are used in the session dropdown menu.
     header:
@@ -115,7 +115,7 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: Lütfen bekle...
+      title: Lütfen bekleyin...
 
     # These translations are used in the navigation bar.
     nav:
@@ -137,10 +137,10 @@ core:
       allow_post_editing_label: Mesaj düzenlemeye izin ver
       allow_renaming_label: Yeniden adlandırmaya izin ver
       create_heading: Oluşturma
-      delete_discussions_forever_label: Delete discussions forever
+      delete_discussions_forever_label: Tartışmayı tamamen siler
       delete_discussions_label: Tartışma siler
       delete_posts_forever_label: Tartışmayı tamamen siler
-      delete_posts_label: Delete posts
+      delete_posts_label: Mesajı siler
       edit_posts_label: Mesajı düzenler
       global_heading: Global
       moderate_heading: Moderate
@@ -184,7 +184,7 @@ core:
       confirm_password_placeholder: => core.ref.confirm_password
       confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
-      incorrect_password_message: The password you entered is incorrect.
+      incorrect_password_message: Girdiğiniz şifre yanlış.
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
@@ -205,33 +205,33 @@ core:
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: Bir Mesaj Yazın...
-      discard_confirmation: "You have not posted your discussion. Do you wish to discard it?"
+      discard_confirmation: "Tartışmanızı göndermediniz. Emin misiniz?"
       submit_button: Tartışmayı Gönder
       title: => core.ref.start_a_discussion
       title_placeholder: Tartışma Başlığı
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "You have not saved your changes. Do you wish to discard them?"
-      post_link: "Post #{number} in {discussion}"
+      discard_confirmation: "Değişiklikleri kaydetmediniz. Emin misiniz?"
+      post_link: "Mesaj #{number} / {discussion}"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "You have not posted your reply. Do you wish to discard it?"
-      posted_message: Your reply was posted.
+      discard_confirmation: "Cevabınızı göndermediniz. Emin misiniz?"
+      posted_message: Cevabınız gönderildi.
       submit_button: Mesajı Gönder
-      view_button: Görünüm
+      view_button: Göster
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: Cevap verilemiyor
-      cannot_reply_text: You don't have permission to reply to this discussion.
+      cannot_reply_button: Cevaplanamaz
+      cannot_reply_text: Bu tartışmaya cevap yazmak için izniniz yok.
       delete_button: => core.ref.delete
-      delete_confirmation: "Are you sure you want to delete this discussion?"
+      delete_confirmation: "Bu tartışmayı silmek istediğinizden emin misiniz?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: Log In to Reply
+      log_in_to_reply_button: Giriş Yapın
       rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
@@ -240,8 +240,8 @@ core:
     discussion_list:
       empty_text: Burada bir tartışma yok gibi görünüyor.
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: Mark as Read
-      replied_text: "{username} replied {ago}"
+      mark_as_read_tooltip: Okundu olarak işaretle
+      replied_text: "{username} {ago} cevapladı"
       started_text: "{username} {ago} başlattı"
 
     # These translations are used in the Edit User modal dialog (admin function).
@@ -252,7 +252,7 @@ core:
       groups_heading: Gruplar
       password_heading: => core.ref.password
       password_label: => core.ref.password
-      set_password_label: Set new password
+      set_password_label: Yeni şifre ata
       submit_button: => core.ref.save_changes
       title: Kullanıcı Düzenle
       username_heading: => core.ref.username
@@ -262,11 +262,11 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: We've sent you an email containing a link to reset your password. Check your spam folder if you don't receive it within the next minute or two.
-      not_found_message: There is no user registered with that email address.
-      submit_button: Recover Password
-      text: Enter your email address and we will send you a link to reset your password.
-      title: Forgot Password
+      email_sent_message: Size şifrenizi sıfırlamanız için bağlantı içeren bir e-posta gönderdik. Bir ya da iki dakika içerisinde almadıysanız spam klasörünüzü kontrol edin.
+      not_found_message: Bu e-posta adresi ile kayıtlı bir kullanıcı yok.
+      submit_button: Şifre Kurtar
+      text: E-posta adresinizi girin ve size şifre sıfırlama bağlantısını gönderelim.
+      title: Şifremi Unuttum
 
     # These translations are used in the header and session dropdown menu.
     header:
@@ -282,8 +282,8 @@ core:
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: Can't Start Discussion
-      mark_all_as_read_confirmation: "Are you sure you want to mark all discussions as read?"
+      cannot_start_discussion_button: Tartışma Başlatamaz
+      mark_all_as_read_confirmation: "Tüm tartışmaları okundu olarak işaretlemek istediğinizden emin misiniz?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Yenile
       start_discussion_button: => core.ref.start_a_discussion
@@ -298,18 +298,18 @@ core:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      forgot_password_link: "Forgot password?"
-      invalid_login_message: Your login details were incorrect.
+      forgot_password_link: "Şifremi Unuttum?"
+      invalid_login_message: Giriş bilgileriniz yanlış.
       password_placeholder: => core.ref.password
       remember_me_label: Beni Hatırla
-      sign_up_text: "Don't have an account? <a>Sign Up</a>"
+      sign_up_text: "Hesabınız yok mu? <a>Kayıt Olun</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: Username or Email
+      username_or_email_placeholder: Kullanıcı Adı ya da E-posta
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} changed the title"
+      discussion_renamed_text: "{username} başlığı değiştirdi"
       empty_text: Bildirim Yok
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
@@ -317,9 +317,9 @@ core:
 
     # These translations are used by tooltips displayed for individual posts.
     post:
-      edited_text: Edited
-      edited_tooltip: "{username} edited {ago}"
-      number_tooltip: "Post #{number}"
+      edited_text: Düzenlendi
+      edited_tooltip: "{username} {ago} düzenledi"
+      number_tooltip: "Mesaj #{number}"
 
     # These translations are used by the post control buttons.
     post_controls:
@@ -333,20 +333,20 @@ core:
       now_link: Şimdi
       original_post_link: Original Mesaj
       unread_text: "{count} unread"
-      viewing_text: "{index} / {count} mesaj|{index} / {count} mesajlar"
+      viewing_text: "{index} / {count} mesaj|{index} / {count} mesaj"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_old_tooltip: 'The old title was: "{old}"'
-      discussion_renamed_text: "{username} changed the title to {new}."
+      discussion_renamed_old_tooltip: 'Eski başlık şöyleydi: "{old}"'
+      discussion_renamed_text: "{username} başlığı {new} olarak değiştirdi."
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: "{period} later"
+      time_lapsed_text: "{period} sonra"
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
       submit_button: => core.ref.rename
-      title: Rename Discussion
+      title: Tartışmayı Yeniden Adlandır
 
     # These translations are used by the search results dropdown list.
     search:
@@ -371,23 +371,23 @@ core:
     sign_up:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      log_in_text: "Already have an account? <a>Log In</a>"
+      log_in_text: "Zaten hesabınız var mı? <a>Giriş Yapın</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "Welcome, {username}!"
+      welcome_text: "Hoş geldin, {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
       avatar_remove_button: => core.ref.remove
-      avatar_upload_button: Upload
-      avatar_upload_tooltip: Upload a new avatar
+      avatar_upload_button: Yükle
+      avatar_upload_tooltip: Yeni avatar yükle
       discussions_link: => core.ref.discussions
       in_discussion_text: "Tartışma: {discussion}"
       joined_date_text: "{ago} katıldı"
       online_text: Çevrimiçi
-      posts_empty_text: It looks like there are no posts here.
+      posts_empty_text: Burada hiç mesaj yok gibi görünüyor.
       posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
@@ -396,28 +396,28 @@ core:
     user_controls:
       button: Ayarlar
       delete_button: => core.ref.delete
-      delete_confirmation: "Are you sure you want to delete this user? All of the user's posts will be deleted."
+      delete_confirmation: "Bu kullanıcıyı silmek istediğinizden emin misiniz? Kullanıcının tüm mesajları silinecek."
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
       alert_message: => core.ref.confirmation_email_sent
-      resend_button: Resend Confirmation Email
-      sent_message: Sent
+      resend_button: Doğrulama e-postasını tekrar gönder
+      sent_message: Gitti
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      hidden_tooltip: Hidden
+      hidden_tooltip: Gizli
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "Oops! Something went wrong. Please reload the page and try again."
-      not_found_message: The requested resource was not found.
-      permission_denied_message: You do not have permission to do that.
-      rate_limit_exceeded_message: You're going a little too quickly. Please try again in a few seconds.
+      generic_message: "Oops! Bir şeyler yanlış gitti. Lütfen sayfayı yenileyip tekrar deneyin."
+      not_found_message: İstediğiniz kaynak bulunamadı.
+      permission_denied_message: Bunu yapmak için yetkiniz yok.
+      rate_limit_exceeded_message: Biraz hızlı gidiyorsunuz. Lütfen birkaç saniye bekleyip tekrar deneyin.
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -427,21 +427,21 @@ core:
     # These translations are used to punctuate a series of items.
     series:
       glue_text: ", "
-      three_text: "{first}, {second}, and {third}"
-      two_text: "{first} and {second}"
+      three_text: "{first}, {second} ve {third}"
+      two_text: "{first} ve {second}"
 
     # These translations are used to modify usernames.
     username:
-      deleted_text: "[deleted]"
+      deleted_text: "[silinmiş]"
 
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
 
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
-      javascript_disabled_message: This site is best viewed in a modern browser with JavaScript enabled.
-      load_error_message: Something went wrong while trying to load the full version of this site. Try hard-refreshing this page to fix the error.
-      loading_text: Loading...
+      javascript_disabled_message: Bu site en iyi modern tarayıcılarda Javascript etkinken görüntülenir.
+      load_error_message: Sayfayı tamamen yüklerken bir şeyler ters gitti.
+      loading_text: Yükleniyor...
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
@@ -450,11 +450,11 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      403_message: You do not have permission to access this page.
+      403_message: Bu sayfaya erişim izniniz yok.
       404_message: İstediğiniz sayfa bulunamadı.
       404_return_link: "{forum} geri dön"
-      500_message: An error occurred while trying to load this page.
-      503_message: "{forum} is undergoing maintenance. Thanks for your patience!"
+      500_message: Bu sayfayı yüklemeye çalışırken bir hata oluştu.
+      503_message: "{forum} Bakımda!. Sabrınız için teşekkürler"
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -465,61 +465,61 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "Are you sure you want to log out of {forum}?"
+      log_out_confirmation: "{forum} çıkmak istediğinizden emin misiniz?"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
     reset_password:
-      confirm_password_label: Confirm New Password
-      new_password_label: New Password
+      confirm_password_label: Yeni şifreyi onayla
+      new_password_label: Yeni Şifre
       submit_button: => core.ref.save_changes
       title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in messages output by the API.
   api:
-    invalid_username_message: "The username may only contain letters, numbers, and dashes."
+    invalid_username_message: "Kullanıcı adı sadece harfler, rakamlar ve alt çizgi içerebilir."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
-      subject: Activate Your New Account
+      subject: Hesabınızı Etkinleştirin
       body: |
-        Hey {username}!
+        Merhaba {username}!
 
-        Someone (hopefully you!) has signed up to {forum} with this email address.
+        Birisi (umarız ki sizsinizdir!) {forum} platformuna bu e-posta adresi ile kayıt oldu.
 
-        If this was you, simply click the following link and your account will be activated:
+        Eğer bu sizseniz, aşağıdaki bağlantıya tıklayarak hesabınızı aktifleştirebilirsiniz:
         {url}
 
-        If you did not sign up, please ignore this email.
+        Eğer değilseniz, lütfen bu e-postayı görmezden gelin.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
-      subject: Confirm Your New Email Address
+      subject: Yeni E-posta Adresinizi Doğrulayın
       body: |
-        Hey {username}!
+        Merhaba {username}!
 
-        Someone (hopefully you!) has changed their email address on {forum} to this one.
+        Birisi (umarız ki sizsinizdir!) {forum} platformundaki e-posta adresini bu e-posta adresi olarak değiştirdi.
 
-        If this was you, simply click the following link and your email will be confirmed:
+        Eğer bu sizseniz, aşağıdaki bağlantıya tıklayarak e-posta adresinizi doğrulayabilirsiniz:
         {url}
 
-        If this was not you, please ignore this email.
+        Eğer değilseniz, lütfen bu e-postayı görmezden gelin.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
       subject: => core.ref.reset_your_password
       body: |
-        Hey {username}!
+        Merhaba {username}!
 
-        Someone (hopefully you!) has submitted a forgotten password request for your account on {forum}.
+        Birisi (umarız ki sizsinizdir!) {forum} platformundaki şifresini değiştirme isteğinde bulundu.
 
-        If this was you, click the following link to reset your password:
+        Eğer sizseniz, aşağıdaki bağlantıya tıklayarak şifrenizi değiştirebilirsiniz:
         {url}
 
-        If you do not wish to change your password, just ignore this email and nothing will happen.
+        Eğer şifrenizi değiştirmek istemiyorsanız, sadece bu e-postayı görmezden gelin, bir şey olmayacak.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -532,40 +532,40 @@ core:
     change_password: Şifre Değiştir
     color: Color                                 # Referenced by flarum-tags.yml
     confirm_password: Şifre Doğrula
-    confirmation_email_sent: "We've sent a confirmation email to {email}. If it doesn't arrive soon, check your spam folder."
-    custom_footer_text: Add HTML to be displayed at the very bottom of the page.
-    custom_footer_title: Edit Custom Footer
+    confirmation_email_sent: "{email} adresine doğrulama e-postası gönderdik. Eğer gelmediyse spam klasörünüzü kontrol edin."
+    custom_footer_text: Sayfanın en altında görüntülenecek HTML'yi ekleyin.
+    custom_footer_title: Harici Footer Düzenle
     custom_header_text: "Sayfanın en üstünde görüntülenecek HTML'yi ekleyin, Flarum'un kendi başlığının üstünde."
     custom_header_title: Harici Başlık Düzenle
     delete: Sil
-    delete_forever: Delete Forever
+    delete_forever: Tamamen Sil
     discussions: Tartışmalar                     # Referenced by flarum-statistics.yml
     edit: Düzenle
     email: E-posta
-    load_more: Load More
+    load_more: Daha Fazla
     log_in: Giriş
     log_out: Çıkış
     mark_all_as_read: Hepsini Okundu Olarak İşaretle
-    next_page: Next Page
+    next_page: Sonraki Sayfa
     notifications: Bildirimler
     okay: TAMAM                                     # Referenced by flarum-tags.yml
     password: Password
     posts: Mesajlar                                 # Referenced by flarum-statistics.yml
-    previous_page: Previous Page
-    remove: Remove
+    previous_page: Önceki sayfa
+    remove: Kaldır
     rename: Yeniden Adlandır
     reply: Cevapla                                 # Referenced by flarum-mentions.yml
-    reset_your_password: Reset Your Password
-    restore: Restore
+    reset_your_password: Şifrenizi Sıfırlayın
+    restore: Geri Al
     save_changes: Değişiklikleri Kaydet                   # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Ayarlar
-    sign_up: Sign Up
-    some_others: "{count} diğer|{count} diğerleri"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    sign_up: Kayıt Ol
+    some_others: "{count} diğer|{count} diğer"  # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Yeni Tartışma
     username: Kullanıcı Adı
     users: Kullanıcılar                                 # Referenced by flarum-statistics.yml
     write_a_reply: Cevap Yaz...
-    you: Sen                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
+    you: Siz                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.

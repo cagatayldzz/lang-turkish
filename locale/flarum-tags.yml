@@ -59,7 +59,7 @@ flarum-tags:
     choose_tags:
       choose_primary_placeholder: "Bir Birincil etiket seçin|{count} birincil etiket seç"
       choose_secondary_placeholder: "1 tane daha etiket seç|{count} tane daha etiket seç"
-      edit_title: "Edit Tags for {title}"
+      edit_title: "{title} Etiketleri düzenle"
       submit_button: => core.ref.okay
       title: Tartışmanız için etiketleri seçin
 
@@ -82,9 +82,9 @@ flarum-tags:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_and_removed_tags_text: "{username} added the {tagsAdded} and removed the {tagsRemoved}."
-      added_tags_text: "{username} added the {tagsAdded}."
-      removed_tags_text: "{username} removed the {tagsRemoved}."
+      added_and_removed_tags_text: "{username} {tagsAdded} ekledi ve {tagsRemoved} kaldırdı."
+      added_tags_text: "{username} {tagsAdded} ekledi."
+      removed_tags_text: "{username} {tagsRemoved} kaldırdı."
       tags_text: "{tags} etiket|{tags} etiketler"
 
   # Translations in this namespace are used by the forum and admin interfaces.
