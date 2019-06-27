@@ -73,8 +73,8 @@ core:
       color_label: => core.ref.color
       delete_button: Delete Group
       delete_confirmation: "Bu grubu silmek istediğinizden emin misiniz? Grup üyeleri silinmeyecektir."
-      icon_label: İkon
-      icon_text: "Herhangi bir <a>FontAwesome</a> icon sınıfını, <code>fas fa-</code> öneki <em>olmadan</em> yazın."
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: İsim
       plural_placeholder: Çoğul (e.g. Moderatörler)
       singular_placeholder: Tekil (e.g. Moderatör)
@@ -89,19 +89,28 @@ core:
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: SMTP Hesabı
       addresses_heading: Adresler
+      driver_heading: Bir sürücü seçin
       driver_label: Sürücü
-      encryption_label: Şifreleme
       from_label: Gönderen
       heading: => core.ref.email
-      host_label: Sunucu
-      password_label: => core.ref.password
-      port_label: Port
-      server_heading: SMTP Sunucu
+      mail_encryption_label: Şifreleme
+      mail_host_label: Host
+      mail_mailgun_domain_label: Alan Adı
+      mail_mailgun_secret_label: Secret key
+      mail_mandrill_secret_label: Secret key
+      mail_password_label: => core.ref.password
+      mail_port_label: Port
+      mail_ses_key_label: Anahtar
+      mail_ses_region_label: Bölge
+      mail_ses_secret_label: Secret
+      mail_username_label: => core.ref.username
+      mailgun_heading: Mailgun Ayarları
+      mandrill_heading: Mandrill Ayarları
+      ses_heading: SES Ayarları
+      smtp_heading: SMTP Ayarları
       submit_button: => core.ref.save_changes
-      text: Forumun e-posta göndermek için kullanacağı SMTP ayarlarını ve adreslerini yapılandırın.
-      username_label: => core.ref.username
+      text: Forumun e-posta göndermek için kullanacağı SMTP ayarları ve adresleri yapılandırın.
 
     # These translations are used in the Extensions page.
     extensions:
@@ -238,7 +247,7 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: Burada bir tartışma yok gibi görünüyor.
+      empty_text: Burada tartışma yokmuş gibi görünüyor.
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: Okundu olarak işaretle
       replied_text: "{username} {ago} cevapladı"
@@ -453,6 +462,8 @@ core:
       403_message: Bu sayfaya erişim izniniz yok.
       404_message: İstediğiniz sayfa bulunamadı.
       404_return_link: "{forum} geri dön"
+      419_message: Uzun süredir aktif değilsin.
+      419_return_link: Tekrar denemek için geri dönün
       500_message: Bu sayfayı yüklemeye çalışırken bir hata oluştu.
       503_message: "{forum} Bakımda!. Sabrınız için teşekkürler"
 
@@ -542,6 +553,8 @@ core:
     discussions: Tartışmalar                     # Referenced by flarum-statistics.yml
     edit: Düzenle
     email: E-posta
+    icon: İkon
+    icon_text: "Herhangi bir <a>FontAwesome</a> ikon sınıfını, <code>fas fa-</code> öneki <em>olmadan</em> yazın."
     load_more: Daha Fazla
     log_in: Giriş
     log_out: Çıkış
