@@ -3,6 +3,6 @@
 
 # Files and directories with this attribute won't be added to archive files
 .gitattributes     export-ignore
-.gitignore     export-ignore
+.gitignore         export-ignore
 README.md          export-ignore
 LICENSE            export-ignore
