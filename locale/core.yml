@@ -151,6 +151,7 @@ core:
       delete_posts_forever_label: Tartışmayı tamamen siler
       delete_posts_label: Mesajı siler
       edit_posts_label: Mesajı düzenler
+      edit_users_label: Kullanıcıları düzenler
       global_heading: Global
       moderate_heading: Moderate
       new_group_button: Yeni Grup
@@ -321,6 +322,7 @@ core:
       discussion_renamed_text: "{username} başlığı değiştirdi"
       empty_text: Bildirim Yok
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      mark_as_read_tooltip: Okunmuş olarak işaretle
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
@@ -406,6 +408,8 @@ core:
       button: Ayarlar
       delete_button: => core.ref.delete
       delete_confirmation: "Bu kullanıcıyı silmek istediğinizden emin misiniz? Kullanıcının tüm mesajları silinecek."
+      delete_error_message: "<i>{username} ({email})</i> kullanıcı silme işlemi başarısız oldu"
+      delete_success_message: "<i>{username} ({email})</i> kullanıcısı silindi"
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -459,13 +463,14 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      403_message: Bu sayfaya erişim izniniz yok.
-      404_message: İstediğiniz sayfa bulunamadı.
-      404_return_link: "{forum} geri dön"
-      419_message: Uzun süredir aktif değilsin.
-      419_return_link: Tekrar denemek için geri dönün
-      500_message: Bu sayfayı yüklemeye çalışırken bir hata oluştu.
-      503_message: "{forum} Bakımda!. Sabrınız için teşekkürler"
+      csrf_token_mismatch: Uzunca bir süre aktif değilsin.
+      csrf_token_mismatch_return_link: Geri dönüp tekrar deneyin
+      invalid_confirmation_token: Bu onaylama bağlantısı zaten kullanılmış veya geçersiz.
+      not_authenticated: Bu sayfaya erişim izniniz yok. Giriş yaptıktan sonra tekrar deneyin.
+      not_found: İstediğiniz sayfa bulunamadı.
+      not_found_return_link: "{forum} geri dön"
+      permission_denied: Bu sayfaya erişim izniniz yok.
+      unknown: Bu sayfa yüklenmeye çalışılırken bir hata oluştu.
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -561,22 +566,22 @@ core:
     mark_all_as_read: Hepsini Okundu Olarak İşaretle
     next_page: Sonraki Sayfa
     notifications: Bildirimler
-    okay: TAMAM                                     # Referenced by flarum-tags.yml
+    okay: TAMAM                                  # Referenced by flarum-tags.yml
     password: Password
-    posts: Mesajlar                                 # Referenced by flarum-statistics.yml
+    posts: Mesajlar                              # Referenced by flarum-statistics.yml
     previous_page: Önceki sayfa
     remove: Kaldır
     rename: Yeniden Adlandır
-    reply: Cevapla                                 # Referenced by flarum-mentions.yml
+    reply: Cevapla                               # Referenced by flarum-mentions.yml
     reset_your_password: Şifrenizi Sıfırlayın
     restore: Geri Al
-    save_changes: Değişiklikleri Kaydet                   # Referenced by flarum-suspend.yml, flarum-tags.yml
+    save_changes: Değişiklikleri Kaydet          # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Ayarlar
     sign_up: Kayıt Ol
-    some_others: "{count} diğer|{count} diğer"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count} diğer|{count} diğer"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Yeni Tartışma
     username: Kullanıcı Adı
-    users: Kullanıcılar                                 # Referenced by flarum-statistics.yml
+    users: Kullanıcılar                          # Referenced by flarum-statistics.yml
     write_a_reply: Cevap Yaz...
     you: Siz                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
