@@ -6,6 +6,9 @@
 ### Installation
 composer require cagatayldzz/lang-turkish
 
+### Update
+composer update cagatayldzz/lang-turkish
+
 ### Remove
 composer remove cagatayldzz/lang-turkish
 
