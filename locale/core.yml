@@ -150,7 +150,7 @@ core:
       create_heading: Oluşturma
       delete_discussions_forever_label: Tartışmayı tamamen sil
       delete_discussions_label: Tartışma siler
-      delete_posts_forever_label: Mesajı tamamen sil
+      delete_posts_forever_label: Mesajları tamamen sil
       delete_posts_label: Mesajı sil
       edit_posts_label: Mesajı düzenle
       edit_users_label: Kullanıcıları düzenle
