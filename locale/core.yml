@@ -97,6 +97,7 @@ core:
       mail_encryption_label: Şifreleme
       mail_host_label: Host
       mail_mailgun_domain_label: Alan Adı
+      mail_mailgun_region_label: Bölge
       mail_mailgun_secret_label: Secret key
       mail_mandrill_secret_label: Secret key
       mail_password_label: => core.ref.password
@@ -107,6 +108,7 @@ core:
       mail_username_label: => core.ref.username
       mailgun_heading: Mailgun Ayarları
       mandrill_heading: Mandrill Ayarları
+      not_sending_message: Flarum şu anda e-posta gönderemiyor. Seçilen sürücü veya yapılandırmasında hatalar olabilir.
       ses_heading: SES Ayarları
       smtp_heading: SMTP Ayarları
       submit_button: => core.ref.save_changes
@@ -146,23 +148,24 @@ core:
       allow_post_editing_label: Mesaj düzenlemeye izin ver
       allow_renaming_label: Yeniden adlandırmaya izin ver
       create_heading: Oluşturma
-      delete_discussions_forever_label: Tartışmayı tamamen siler
+      delete_discussions_forever_label: Tartışmayı tamamen sil
       delete_discussions_label: Tartışma siler
-      delete_posts_forever_label: Tartışmayı tamamen siler
-      delete_posts_label: Mesajı siler
-      edit_posts_label: Mesajı düzenler
-      edit_users_label: Kullanıcıları düzenler
+      delete_posts_forever_label: Mesajları tamamen sil
+      delete_posts_label: Mesajı sil
+      edit_posts_label: Mesajı düzenle
+      edit_users_label: Kullanıcıları düzenle
       global_heading: Global
       moderate_heading: Moderate
       new_group_button: Yeni Grup
       participate_heading: Katılma
+      post_without_throttle_label: Beklemeden birden çok kez yanıtlayın
       read_heading: Okuma
       rename_discussions_label: Tartışmayı yeniden adlandırma
       reply_to_discussions_label: Tartışmaya cevap verme
       sign_up_label: Kayıt Olma
       start_discussions_label: Tartışma başlatma
       view_discussions_label: Tartışma görüntüleme
-      view_last_seen_at_label: Son görülme zamanını görüntüle
+      view_last_seen_at_label: Kullanıcının son görülme zamanını görüntüle
       view_post_ips_label: Mesaj IP adresi görüntüleme
       view_user_list_label: Kullanıcı listesini görüntüle
 

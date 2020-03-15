@@ -14,6 +14,7 @@ flarum-flags:
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
+      flag_own_posts_label: Kullanıcıların kendi mesajlarını işaretlemesine izin ver
       guidelines_url_label: Topluluk Kuralları URL
       title: İşaretleme Ayarları
 
@@ -24,11 +25,13 @@ flarum-flags:
     flag_post:
       confirmation_message: Bu mesajı işaretlediğiniz için teşekkür ederiz. Moderatörlerimiz inceleyecekler.
       dismiss_button: => core.ref.okay
+      reason_details_placeholder: Ek ayrıntılar (isteğe bağlı)
       reason_inappropriate_label: Uygunsuz
       reason_inappropriate_text: "Bu mesaj saldırgan, rahatsız edici veya <a>topluluk yönergelerimizi</a> ihlal ediyor."
+      reason_missing_message: Lütfen moderatörler için bazı detaylar sağlayın.
       reason_off_topic_label: "Konu-dışı"
       reason_off_topic_text: Bu mesaj mevcut tartışma ile alakalı değil ve başka bir yere taşınmalıdır.
-      reason_other_label: Diğer
+      reason_other_label: Diğer (Lütfen Belirtin)
       reason_spam_label: Spam
       reason_spam_text: Bu mesaj bir reklam içeriyor.
       submit_button: => flarum-flags.ref.flag_post
