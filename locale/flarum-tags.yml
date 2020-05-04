@@ -57,6 +57,11 @@ flarum-tags:
   # Translations in this namespace are used by the forum user interface.
   forum:
 
+    # These translations are displayed on the page that lists all tags.
+    all_tags:
+      meta_description_text: Tüm Etiketler
+      meta_title_text: => flarum-tags.ref.tags
+
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
       choose_primary_placeholder: "Bir Birincil etiket seçin|{count} birincil etiket seç"
@@ -88,6 +93,10 @@ flarum-tags:
       added_tags_text: "{username} {tagsAdded} ekledi."
       removed_tags_text: "{username} {tagsRemoved} kaldırdı."
       tags_text: "{tags} etiket|{tags} etiketler"
+
+    # These translations are used when visiting a single tag's discussion list.
+    tag:
+      meta_description_text: "{tag} etiketi ile yapılan tüm tartışmalar"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:

@@ -73,6 +73,7 @@ core:
       color_label: => core.ref.color
       delete_button: Delete Group
       delete_confirmation: "Bu grubu silmek istediğinizden emin misiniz? Grup üyeleri silinmeyecektir."
+      hide_label: Forumda gizle
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: İsim
@@ -165,6 +166,7 @@ core:
       sign_up_label: Kayıt Olma
       start_discussions_label: Tartışma başlatma
       view_discussions_label: Tartışma görüntüleme
+      view_hidden_groups_label: Gizli grup etiketlerini görüntüle
       view_last_seen_at_label: Kullanıcının son görülme zamanını görüntüle
       view_post_ips_label: Mesaj IP adresi görüntüleme
       view_user_list_label: Kullanıcı listesini görüntüle
@@ -338,8 +340,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
+      delete_confirmation: "Bu mesajı kalıcı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
+      hide_confirmation: "Bu mesajı silmek istediğinizden emin misiniz?"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -410,7 +414,7 @@ core:
     user_controls:
       button: Ayarlar
       delete_button: => core.ref.delete
-      delete_confirmation: "Bu kullanıcıyı silmek istediğinizden emin misiniz? Kullanıcının tüm mesajları silinecek."
+      delete_confirmation: "Bu kullanıcıyı silmek istediğinizden emin misiniz? Kullanıcının mesajları silinmez."
       delete_error_message: "<i>{username} ({email})</i> kullanıcı silme işlemi başarısız oldu"
       delete_success_message: "<i>{username} ({email})</i> kullanıcısı silindi"
       edit_button: => core.ref.edit
