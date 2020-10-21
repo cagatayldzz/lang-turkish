@@ -40,6 +40,8 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: Varsayılan Dil
+      display_name_heading: Kullanıcı Görünen Adı
+      display_name_text: Kullanıcıların görünen adları için kullanılması gereken sürücüyü seçin. Varsayılan olarak, kullanıcı adı gösterilir.
       forum_description_heading: Forum Açıklaması
       forum_description_text: Topluluğunu tanımlayan kısa bir cümle girin. Bu meta etiketinde görünecek ve arama motorlarında görünecektir.
       forum_title_heading: Forum Başlığı
@@ -100,17 +102,15 @@ core:
       mail_mailgun_domain_label: Alan Adı
       mail_mailgun_region_label: Bölge
       mail_mailgun_secret_label: Secret key
-      mail_mandrill_secret_label: Secret key
       mail_password_label: => core.ref.password
       mail_port_label: Port
-      mail_ses_key_label: Anahtar
-      mail_ses_region_label: Bölge
-      mail_ses_secret_label: Secret
       mail_username_label: => core.ref.username
       mailgun_heading: Mailgun Ayarları
-      mandrill_heading: Mandrill Ayarları
       not_sending_message: Flarum şu anda e-posta gönderemiyor. Seçilen sürücü veya yapılandırmasında hatalar olabilir.
-      ses_heading: SES Ayarları
+      send_test_mail_button: Gönder
+      send_test_mail_heading: Test E-posta gönder
+      send_test_mail_success: "Test e-posta başarıyla gönderildi!"
+      send_test_mail_text: "Yukarıdaki yapılandırmayı kullanarak {email} adresine bir e-posta gönderecektir."
       smtp_heading: SMTP Ayarları
       submit_button: => core.ref.save_changes
       text: Forumun e-posta göndermek için kullanacağı SMTP ayarları ve adresleri yapılandırın.
@@ -300,6 +300,7 @@ core:
       cannot_start_discussion_button: Tartışma Başlatamaz
       mark_all_as_read_confirmation: "Tüm tartışmaları okundu olarak işaretlemek istediğinizden emin misiniz?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      meta_title_text: => core.ref.all_discussions
       refresh_tooltip: Yenile
       start_discussion_button: => core.ref.start_a_discussion
 
@@ -434,7 +435,9 @@ core:
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "Oops! Bir şeyler yanlış gitti. Lütfen sayfayı yenileyip tekrar deneyin."
+      dependent_extensions_message: "Aşağıdaki bağımlı uzantılar devre dışı bırakılıncaya kadar {extension} devre dışı bırakılamaz: {extensions}"
+      missing_dependencies_message: "Aşağıdaki bağımlılıklar etkinleştirilene kadar {extension} etkinleştirilemez: {extensions}"
+      generic_message: "Hata! Bir şeyler yanlış gitti. Lütfen sayfayı yenileyip tekrar deneyin."
       not_found_message: İstediğiniz kaynak bulunamadı.
       permission_denied_message: Bunu yapmak için yetkiniz yok.
       rate_limit_exceeded_message: Biraz hızlı gidiyorsunuz. Lütfen birkaç saniye bekleyip tekrar deneyin.
@@ -543,6 +546,18 @@ core:
         {url}
 
         Eğer şifrenizi değiştirmek istemiyorsanız, sadece bu e-postayı görmezden gelin, bir şey olmayacak.
+
+    # These translations are used when testing mailing configuration
+    send_test:
+      subject: Flarum Test Eposta
+      body: |
+        Merhaba {username}!
+
+        Bu, Flarum e-posta yapılandırmanızın düzgün çalıştığını doğrulamak için bir test e-postasıdır.
+
+        Eğer bu sizseniz, bu e-posta yapılandırmanızın çalıştığı anlamına gelir!
+
+        Eğer değilseniz, lütfen bu e-postayı görmezden gelin.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!

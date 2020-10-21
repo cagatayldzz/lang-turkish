@@ -18,6 +18,10 @@ flarum-subscriptions:
       unfollow_button: Takip Etme
       unignore_button: Yoksayılanlardan çıkar
 
+    # These translations are used on the page that displays all subscriptions.
+    following:
+      meta_title_text: => flarum-subscriptions.ref.following
+
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       following_link: => flarum-subscriptions.ref.following
@@ -42,6 +46,29 @@ flarum-subscriptions:
       not_following_text: "@sen andıklarında bildirilecek."
       notify_alert_tooltip: Yeni mesaj olduğunda forum bildirimi alın
       notify_email_tooltip: Yeni gönderiler olduğunda bir e-posta alın
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when a post is made in a subscribed discussion
+    new_post:
+      subject: "[New Post] {title}"
+      body: |
+        Merhaba {recipient_display_name}!
+
+        {poster_display_name} takip ettiğiniz bir tartışmada gönderi yaptı: {title}.
+
+        Yeni etkinliği görüntülemek için aşağıdaki bağlantıya göz atın:
+
+        {url}
+
+        ---
+
+        {content}
+
+        ---
+
+        Güncel olana kadar bu tartışma hakkında başka bildirim almayacaksınız.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!

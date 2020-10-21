@@ -1,6 +1,6 @@
 # Turkish Language Pack for Flarum
 
-[![Latest Stable Version](https://img.shields.io/badge/packagist-v0.1.0--beta.13-orange.svg)](https://packagist.org/packages/cagatayldzz/lang-turkish)
+[![Latest Stable Version](https://img.shields.io/badge/packagist-v0.1.0--beta.14-orange.svg)](https://packagist.org/packages/cagatayldzz/lang-turkish)
 [![GitHub license](https://img.shields.io/github/license/cagatayldzz/lang-turkish.svg)](https://raw.githubusercontent.com/cagatayldzz/lang-turkish/master/LICENSE)
 
 ### Installation
